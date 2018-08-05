@@ -3,7 +3,7 @@ class Application
 
     def call(env)
         resp = Rack::Response.new
-        bindind.pry
+        binding.pry
         resp.write "Good Morning" #if Time.now <= 12:00
         resp.write "Good Afternoon" #if Time.now > 12:00
 
